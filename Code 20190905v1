@@ -1,0 +1,42 @@
+---
+title: "DataWranglingCS1IntroDSDH20190904 WIP"
+author: "David Himmel"
+date: "09/05/2019"
+output:
+  html_document:
+    df_print: paged
+---
+
+library("tidyr", "dplyr", "fastDummies", "data.table")
+refine_original <- read.csv("refine_original.csv")
+
+#Amend company names to correct spellings
+refine_original_1_1 <- mutate(refine_original, company_refined =
+         case_when(grepl("^Phil", refine_original$company, ignore.case = TRUE) ~ "Phillips",
+                   grepl("^Ak", refine_original$company, ignore.case = TRUE) ~ "Akzo",
+                   grepl("^Van", refine_original$company, ignore.case = TRUE) ~ "Van Houten",
+                   grepl("^Uni", refine_original$company, ignore.case = TRUE) ~ "Uni",
+                   grepl("^Phl", refine_original$company, ignore.case = TRUE) ~ "Phillips",
+                   grepl("^Fil", refine_original$company, ignore.case = TRUE) ~ "Phillips"))
+
+#Separate product code and number into two separate columns
+refine_original_1_2 <- separate(refine_original_1_1, Product.code...number, c("Prod_Code", "Prod_Num"), sep = "-")
+
+#Create column with product categories
+refine_original_1_3 <- mutate(refine_original_1_2, Prod_Category = 
+        case_when(grepl("p", refine_original_1_2$Prod_Code, ignore.case = TRUE) ~ "Smartphone",
+                 grepl("v", refine_original_1_2$Prod_Code, ignore.case = TRUE) ~ "TV",
+                 grepl("x", refine_original_1_2$Prod_Code, ignore.case = TRUE) ~ "Laptop",
+                 grepl("q", refine_original_1_2$Prod_Code, ignore.case = TRUE) ~ "Tablet"))
+
+#Add column with geocoded addresses
+refine_original_1_4 <- unite(refine_original_1_3, "Geo_Code_Add", address, city, country, sep = ",")
+
+#Create dummy variables for company and product category
+refine_original_1_5 <- dummy_columns(refine_original_1_4, select_columns = c("company_refined", "Prod_Category"))
+
+#Drop unneeded columns
+refine_original_1_6 <- subset(refine_original_1_5, select = -c(company))
+
+#Export to csv file
+refine_original_final <- write.csv(refine_original_1_6, '/Users/bentlikebender1/Downloads/R Stuff/refine_clean.csv')
