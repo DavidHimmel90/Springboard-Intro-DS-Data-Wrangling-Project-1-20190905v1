@@ -1,0 +1,26 @@
+,Prod_Code,Prod_Num,Geo_Code_Add,name,company_refined,Prod_Category,company_refined_Phillips,company_refined_Akzo,company_refined_Van Houten,company_refined_Uni,Prod_Category_Smartphone,Prod_Category_Laptop,Prod_Category_TV,Prod_Category_Tablet
+1,p,5,"Groningensingel 147,arnhem,the netherlands",dhr p. jansen,Phillips,Smartphone,1,0,0,0,1,0,0,0
+2,p,43,"Groningensingel 148,arnhem,the netherlands",dhr p. hansen,Phillips,Smartphone,1,0,0,0,1,0,0,0
+3,x,3,"Groningensingel 149,arnhem,the netherlands",dhr j. Gansen,Phillips,Laptop,1,0,0,0,0,1,0,0
+4,x,34,"Groningensingel 150,arnhem,the netherlands",dhr p. mansen,Phillips,Laptop,1,0,0,0,0,1,0,0
+5,x,12,"Groningensingel 151,arnhem,the netherlands",dhr p. fransen,Phillips,Laptop,1,0,0,0,0,1,0,0
+6,p,23,"Groningensingel 152,arnhem,the netherlands",dhr p. franssen,Phillips,Smartphone,1,0,0,0,1,0,0,0
+7,v,43,"Leeuwardenweg 178,arnhem,the netherlands",dhr p. bansen,Akzo,TV,0,1,0,0,0,0,1,0
+8,v,12,"Leeuwardenweg 179,arnhem,the netherlands",dhr p. vansen,Akzo,TV,0,1,0,0,0,0,1,0
+9,x,5,"Leeuwardenweg 180,arnhem,the netherlands",dhr p. bransen,Akzo,Laptop,0,1,0,0,0,1,0,0
+10,p,34,"Leeuwardenweg 181,arnhem,the netherlands",dhr p. janssen,Akzo,Smartphone,0,1,0,0,1,0,0,0
+11,q,5,"Leeuwardenweg 182,arnhem,the netherlands",mevr l.  rokken,Akzo,Tablet,0,1,0,0,0,0,0,1
+12,q,9,"Leeuwardenweg 183,arnhem,the netherlands",mevr l.  lokken,Akzo,Tablet,0,1,0,0,0,0,0,1
+13,x,8,"Leeuwardenweg 184,arnhem,the netherlands",mevr l.  mokken,Akzo,Laptop,0,1,0,0,0,1,0,0
+14,p,56,"Delfzijlstraat 54,arnhem,the netherlands",mevr l.  mokken,Phillips,Smartphone,1,0,0,0,1,0,0,0
+15,v,67,"Delfzijlstraat 55,arnhem,the netherlands",mevr l.  mokken,Phillips,TV,1,0,0,0,0,0,1,0
+16,v,21,"Delfzijlstraat 56,arnhem,the netherlands",mevr l.  mokken,Phillips,TV,1,0,0,0,0,0,1,0
+17,x,45,"Delfzijlstraat 57,arnhem,the netherlands",mevr l.  sokken,Van Houten,Laptop,0,0,1,0,0,1,0,0
+18,v,56,"Delfzijlstraat 58,arnhem,the netherlands",mevr l.  wokken,Van Houten,TV,0,0,1,0,0,0,1,0
+19,v,65,"Delfzijlstraat 59,arnhem,the netherlands",mevr l.  kokken,Van Houten,TV,0,0,1,0,0,0,1,0
+20,x,21,"Delfzijlstraat 60,arnhem,the netherlands",mevr l.  Bokken,Van Houten,Laptop,0,0,1,0,0,1,0,0
+21,p,23,"Delfzijlstraat 61,arnhem,the netherlands",mevr l.  dokken,Van Houten,Smartphone,0,0,1,0,1,0,0,0
+22,x,3,"Jourestraat 23,arnhem,the netherlands",mevr l.  gokken,Uni,Laptop,0,0,0,1,0,1,0,0
+23,q,4,"Jourestraat 24,arnhem,the netherlands",mevr l.  stokken,Uni,Tablet,0,0,0,1,0,0,0,1
+24,q,6,"Jourestraat 25,arnhem,the netherlands",mevr l.  rokken,Uni,Tablet,0,0,0,1,0,0,0,1
+25,q,8,"Jourestraat 26,arnhem,the netherlands",mevr l.  rokken,Uni,Tablet,0,0,0,1,0,0,0,1
